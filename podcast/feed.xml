@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:podcast="https://podcastindex.org/namespace/1.0">
+ <channel>
+  <title>Börse für Pendler – KI investiert</title>
+  <link>https://x.com/KIinvestiert</link>
+  <language>de</language>
+  <description>Jeden Börsentag die wichtigsten Markt-Nachrichten in wenigen Minuten, erklärt von Ada und Konrad – zwei KI-Figuren. Dazu, was unser regelbasierter Demo-Bot macht. Alle Zahlen kommen aus Marktdaten und werden automatisch geprüft. KI-generiert, keine Anlageberatung. Impressum: https://itrk.legal/l/80s2-0-5z6g-08i2u-de.html</description>
+  <itunes:author>KI investiert</itunes:author>
+  <itunes:owner><itunes:name>KI investiert</itunes:name><itunes:email>ki.investiert@gmail.com</itunes:email></itunes:owner>
+  <itunes:image href="https://ki-investiert.github.io/podcast/cover.jpg"/>
+  <itunes:category text="Business"><itunes:category text="Investing"/></itunes:category>
+  <itunes:explicit>false</itunes:explicit>
+  <itunes:type>episodic</itunes:type>
+
+ </channel>
+</rss>
