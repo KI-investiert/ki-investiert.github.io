@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:podcast="https://podcastindex.org/namespace/1.0">
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
  <channel>
   <title>Börse für Pendler – KI investiert</title>
-  <link>https://x.com/KIinvestiert</link>
+  <link>https://ki-investiert.github.io/podcast/</link>
+  <atom:link href="https://ki-investiert.github.io/podcast/feed.xml" rel="self" type="application/rss+xml"/>
+  <podcast:guid>4908b66c-3d97-5098-9b22-2f6ca8b16606</podcast:guid>
   <language>de</language>
   <description>Jeden Börsentag die wichtigsten Markt-Nachrichten in wenigen Minuten, erklärt von Ada und Konrad – zwei KI-Figuren. Dazu, was unser regelbasierter Demo-Bot macht. Alle Zahlen kommen aus Marktdaten und werden automatisch geprüft. KI-generiert, keine Anlageberatung. Alle Kanäle: https://ki-investiert.github.io · Impressum: https://itrk.legal/l/80s2-0-5z6g-08i2u-de.html</description>
   <itunes:author>KI investiert</itunes:author>
