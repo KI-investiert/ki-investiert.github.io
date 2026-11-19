@@ -4,13 +4,21 @@
   <title>Börse für Pendler – KI investiert</title>
   <link>https://x.com/KIinvestiert</link>
   <language>de</language>
-  <description>Jeden Börsentag die wichtigsten Markt-Nachrichten in wenigen Minuten, erklärt von Ada und Konrad – zwei KI-Figuren. Dazu, was unser regelbasierter Demo-Bot macht. Alle Zahlen kommen aus Marktdaten und werden automatisch geprüft. KI-generiert, keine Anlageberatung. Impressum: https://itrk.legal/l/80s2-0-5z6g-08i2u-de.html</description>
+  <description>Jeden Börsentag die wichtigsten Markt-Nachrichten in wenigen Minuten, erklärt von Ada und Konrad – zwei KI-Figuren. Dazu, was unser regelbasierter Demo-Bot macht. Alle Zahlen kommen aus Marktdaten und werden automatisch geprüft. KI-generiert, keine Anlageberatung. Alle Kanäle: https://ki-investiert.github.io · Impressum: https://itrk.legal/l/80s2-0-5z6g-08i2u-de.html</description>
   <itunes:author>KI investiert</itunes:author>
   <itunes:owner><itunes:name>KI investiert</itunes:name><itunes:email>ki.investiert@gmail.com</itunes:email></itunes:owner>
   <itunes:image href="https://ki-investiert.github.io/podcast/cover.jpg"/>
   <itunes:category text="Business"><itunes:category text="Investing"/></itunes:category>
   <itunes:explicit>false</itunes:explicit>
   <itunes:type>episodic</itunes:type>
-
+  <item>
+   <title>Morning Show: Märkte, Fed und Termine heute (19.11.)</title>
+   <description>Themen: Tech-Zahlen, Börsengang und Fed. Ada und Konrad sind KI-Figuren. KI-generiert, keine Anlageberatung.</description>
+   <enclosure url="https://ki-investiert.github.io/podcast/folgen/2026-11-19_morning.mp3" length="2716777" type="audio/mpeg"/>
+   <guid isPermaLink="false">ki-investiert-2026-11-19-morning</guid>
+   <pubDate>Thu, 19 Nov 2026 09:45:00 +0100</pubDate>
+   <itunes:duration>170</itunes:duration>
+   <itunes:explicit>false</itunes:explicit>
+  </item>
  </channel>
 </rss>
