@@ -1,19 +1,37 @@
-<!DOCTYPE html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Live-Depot des KI-Bots – KI investiert</title>
-<meta name="description" content="Das Demo-Depot des regelbasierten Bots von KI investiert: Depotwert, Aufteilung, Entwicklung im Vergleich zum MSCI World und Entscheidungs-Tagebuch, stündlich aktualisiert.">
-<link rel="canonical" href="https://www.ki-investiert.de/depot/">
-<style>
-body{margin:0;font-family:-apple-system,'Segoe UI',Roboto,sans-serif;background:#f8fafc;color:#0f172a;line-height:1.45}
-main{max-width:760px;margin:0 auto;padding:20px}h1{font-size:26px;margin:8px 0 4px}h2{font-size:19px;margin:28px 0 8px}
-.karte{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:16px;margin:12px 0}
-.gross{font-size:36px;font-weight:700;letter-spacing:-.5px}.plus{color:#15803d}.minus{color:#b91c1c}.leise{color:#64748b;font-size:14px}
-table{width:100%;border-collapse:collapse}td,th{padding:8px 4px;border-bottom:1px solid #e2e8f0;text-align:left;vertical-align:middle}
-td.z,th.z{text-align:right;white-space:nowrap}.balken{height:8px;border-radius:4px;margin-top:4px}
-a{color:#1d4ed8}.ki{display:inline-block;background:#eef2ff;color:#3730a3;border-radius:6px;padding:2px 8px;font-size:13px}
-.zwei{display:flex;gap:18px;align-items:center;flex-wrap:wrap}.legende div{display:flex;align-items:center;gap:8px;margin:5px 0;font-size:14px}
-details{border-bottom:1px solid #e2e8f0;padding:10px 0}details:last-child{border-bottom:0}summary{cursor:pointer;list-style:none;display:grid;grid-template-columns:18px 1fr auto;gap:8px;align-items:center;text-align:left}summary>span:first-of-type{justify-self:start}summary::-webkit-details-marker{display:none}summary:before{content:"\25B8";color:#64748b}details[open] summary:before{content:"\25BE"}.marke{display:inline-block;font-size:12px;border-radius:6px;padding:1px 7px;margin-left:6px;background:#fef3c7;color:#92400e}.innen{padding:8px 0 2px 18px;font-size:14px}.innen table td{padding:4px}.punkt{width:12px;height:12px;border-radius:3px;flex:none}svg text{font-family:inherit}
-</style></head><body><main>
-<p><a href="/">&larr; KI investiert</a> &middot; <span class="ki">Ada &amp; Konrad sind KI-Figuren</span></p>
+<!DOCTYPE html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Live-Depot des KI-Bots – KI investiert</title><meta name="description" content="Das Demo-Depot des regelbasierten Bots von KI investiert: Depotwert, Aufteilung, Entwicklung im Vergleich zum MSCI World und Entscheidungs-Tagebuch, stündlich aktualisiert."><link rel="canonical" href="https://www.ki-investiert.de/depot/"><link rel="icon" href="/img/icon.png"><meta property="og:title" content="Live-Depot des KI-Bots – KI investiert"><meta property="og:description" content="Das Demo-Depot des regelbasierten Bots von KI investiert: Depotwert, Aufteilung, Entwicklung im Vergleich zum MSCI World und Entscheidungs-Tagebuch, stündlich aktualisiert."><meta property="og:image" content="https://www.ki-investiert.de/img/duo.webp"><meta property="og:locale" content="de_DE"><style>.depot{margin:0;font-family:-apple-system,'Segoe UI',Roboto,sans-serif;background:#f8fafc;color:#0f172a;line-height:1.45}.depot{max-width:760px;margin:0 auto;padding:20px}.depot h1{font-size:26px;margin:8px 0 4px}.depot h2{font-size:19px;margin:28px 0 8px}.depot .karte{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:16px;margin:12px 0}.depot .gross{font-size:36px;font-weight:700;letter-spacing:-.5px}.depot .plus{color:#15803d}.depot .minus{color:#b91c1c}.depot .leise{color:#64748b;font-size:14px}.depot table{width:100%;border-collapse:collapse}.depot td,.depot th{padding:8px 4px;border-bottom:1px solid #e2e8f0;text-align:left;vertical-align:middle}.depot td.z,.depot th.z{text-align:right;white-space:nowrap}.depot .balken{height:8px;border-radius:4px;margin-top:4px}.depot a{color:#1d4ed8}.depot .ki{display:inline-block;background:#eef2ff;color:#3730a3;border-radius:6px;padding:2px 8px;font-size:13px}.depot .zwei{display:flex;gap:18px;align-items:center;flex-wrap:wrap}.depot .legende div{display:flex;align-items:center;gap:8px;margin:5px 0;font-size:14px}.depot details{border-bottom:1px solid #e2e8f0;padding:10px 0}.depot details:last-child{border-bottom:0}.depot summary{cursor:pointer;list-style:none;display:grid;grid-template-columns:18px 1fr auto;gap:8px;align-items:center;text-align:left}.depot summary>span:first-of-type{justify-self:start}.depot summary::-webkit-details-marker{display:none}.depot summary:before{content:"\25B8";color:#64748b}.depot details[open] summary:before{content:"\25BE"}.depot .marke-d{display:inline-block;font-size:12px;border-radius:6px;padding:1px 7px;margin-left:6px;background:#fef3c7;color:#92400e}.depot .innen{padding:8px 0 2px 18px;font-size:14px}.depot .innen table td{padding:4px}.depot .punkt{width:12px;height:12px;border-radius:3px;flex:none}.depot svg text{font-family:inherit}.depot{max-width:760px;margin:0 auto;padding:20px 22px 48px;font-size:16px;line-height:1.45}.depot h1{font-size:30px}</style><style>
+:root{--tinte:#0B1F3A;--petrol:#14B8A6;--petrol-text:#0B7A6E;--papier:#F4F7FA;--weiss:#FFFFFF;--linie:#D5DEE7;
+--leise:#52606D;--verlust:#B42318;--gewinn:#0B7A6E;--max:1080px}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--papier);color:var(--tinte);font:17px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+a{color:var(--tinte);text-decoration-color:var(--petrol);text-decoration-thickness:2px;text-underline-offset:3px}
+a:hover{color:var(--petrol-text)}
+:focus-visible{outline:3px solid var(--petrol);outline-offset:3px;border-radius:4px}
+.zahl{font-variant-numeric:tabular-nums}
+.huelle{max-width:var(--max);margin:0 auto;padding:0 22px}
+header.kopf{border-bottom:1px solid var(--linie);background:var(--weiss)}
+header.kopf .huelle{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;flex-wrap:wrap}
+.marke{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;font-size:19px;letter-spacing:-.3px}
+.marke img{width:34px;height:34px;border-radius:8px}.marke b{color:var(--petrol-text)}
+nav.haupt{display:flex;gap:20px;flex-wrap:wrap;font-size:15px}nav.haupt a{text-decoration:none;color:var(--leise)}
+nav.haupt a:hover,nav.haupt a[aria-current]{color:var(--tinte);text-decoration:underline;text-decoration-color:var(--petrol)}
+.knopf{display:inline-block;padding:13px 20px;border-radius:10px;font-weight:700;text-decoration:none;font-size:16px;line-height:1.2}
+.knopf.voll{background:var(--tinte);color:#fff}.knopf.voll:hover{background:#12305a;color:#fff}
+.knopf.rand{border:2px solid var(--tinte);color:var(--tinte)}.knopf.rand:hover{background:var(--weiss)}
+.ki{display:inline-block;font-size:13px;color:var(--leise);border:1px solid var(--linie);border-radius:999px;padding:3px 10px;background:var(--weiss)}
+h1,h2,h3{line-height:1.15;letter-spacing:-.6px;margin:0}
+h1{font-size:clamp(34px,5.2vw,58px);font-weight:800}
+h2{font-size:clamp(26px,3.2vw,36px);font-weight:800}
+h3{font-size:20px;font-weight:700;letter-spacing:-.2px}
+p{margin:0 0 14px}.leise{color:var(--leise)}.klein{font-size:14px}
+.minus{color:var(--verlust)}.plus{color:var(--gewinn)}
+section.block{padding:64px 0;border-top:1px solid var(--linie)}
+.raster{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:32px 48px}
+@media(max-width:820px){.raster{grid-template-columns:1fr}section.block{padding:44px 0}}
+footer.fuss{border-top:1px solid var(--linie);background:var(--weiss);padding:36px 0 44px;font-size:14px;color:var(--leise)}
+footer.fuss .spalten{display:flex;flex-wrap:wrap;gap:12px 28px;margin-bottom:14px}footer.fuss a{color:var(--leise)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style></head><body><header class="kopf"><div class="huelle"><a class="marke" href="/"><img src="/img/icon.png" alt="" width="34" height="34"><span><b>KI</b> investiert</span></a><nav class="haupt" aria-label="Hauptnavigation"><a href="/depot/" aria-current="page">Live-Depot</a><a href="/experiment/">Das Experiment</a><a href="/podcast/">Podcast</a><a href="/pakete/">Pakete</a><a href="/b2b/">Für Vermögensverwalter</a></nav></div></header><main><div class="depot">
+<p><span class="ki">Ada &amp; Konrad sind KI-Figuren</span></p>
 <h1>Live-Depot des Bots</h1>
 <p class="leise" id="stand">Daten werden geladen &hellip;</p>
 <div class="karte"><div class="leise">Depotwert &middot; eingezahlt <span id="ein">&ndash;</span></div><div class="gross" id="wert">&ndash;</div><div id="erg"></div></div>
@@ -78,7 +96,7 @@ function logbuch(d){
   const nach={};v.forEach((p,i)=>{nach[p.datum]={p,vor:i?v[i-1]:null};});
   return liste.map((t,j)=>{const e=nach[t],ent=tb[t]||[];
     const tag_=e&&e.vor?(e.p.bot_pct-e.vor.bot_pct):null;
-    const kopf='<span><b>'+tag(t)+'</b>'+(ent.length?'<span class="marke">Entscheidung</span>':'')+'</span>'+
+    const kopf='<span><b>'+tag(t)+'</b>'+(ent.length?'<span class="marke-d">Entscheidung</span>':'')+'</span>'+
       (e?'<span class="'+kl(e.p.bot_pct)+'">'+pct(e.p.bot_pct)+'</span>':'');
     let innen='';
     if(ent.length)innen+=ent.map(x=>'<p style="margin:4px 0"><b>'+esc(x.aktion)+'</b><br><span class="leise">'+esc(x.warum)+'</span></p>').join('');
@@ -108,4 +126,4 @@ function zeige(d){
 }
 async function laden(){try{/*DATEN*/const r=await fetch('/depot_live.json?t='+Date.now());zeige(await r.json());}catch(e){document.getElementById('stand').textContent='Die Daten sind gerade nicht erreichbar. Bitte später neu laden.';}}
 laden();setInterval(laden,300000);
-</script></main></body></html>
+</script></div></main><footer class="fuss"><div class="huelle"><div class="spalten"><a href="https://itrk.legal/l/80s2-0-5z6g-08i2u-de.html">Impressum</a><a href="https://itrk.legal/l/80s2-f4-5z6g-6kge3.html">Datenschutz</a><a href="/kanaele/">Offizielle Kanäle</a><a href="/pakete/#fragen">Häufige Fragen</a><a href="mailto:info@ki-investiert.de">info@ki-investiert.de</a></div><p>Ada und Konrad sind KI-Figuren. Alle Inhalte dienen der Information und sind keine Anlageberatung. DYOR (Do Your Own Research): Führe vor jeder Entscheidung deine eigene Recherche durch. Der Bot handelt in einem Demo-Konto mit Spielgeld. Kurse können fallen, Verluste sind möglich.</p><p>© 2026 KI investiert</p></div></footer></body></html>
