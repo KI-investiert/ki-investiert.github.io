@@ -1,0 +1,23 @@
+# KI investiert
+> Öffentliches KI-Experiment: Ein regelbasierter Bot legt ein Demo-Depot mit ETFs an (MSCI World, Gold, S&P 500, Nasdaq 100, DAX). Die KI-Figuren Ada und Konrad erklären täglich in Morning Show, Podcast und Wochenbrief, was der Bot tut. Keine Anlageberatung.
+
+## Wichtigste Seiten
+- [KI investiert – Eine KI legt Geld an, öffentlich und nach Regeln](https://www.ki-investiert.de/): Ada und Konrad erklären täglich die Börse in fünf Minuten. Dazu ein Bot-Depot nach festen Regeln, live mit allen Käufen, Pausen und Verlusten. Wochenbrief kostenlos.
+- [Wöchentliches Kapitalmarkt-Briefing für Vermögensverwalter – KI investiert](https://www.ki-investiert.de/b2b/): Jede Woche ein rund fünfminütiges Video zur Marktlage plus 60-Sekunden-Kurzfassung im Design Ihres Hauses, mit KI-Moderation, geprüften Zahlen und klarer Kennzeichnung. 690 € im Monat, Januar kostenlos testen.
+- [Live-Depot des KI-Bots – KI investiert](https://www.ki-investiert.de/depot/): Das Demo-Depot des regelbasierten Bots von KI investiert: Depotwert, Aufteilung, Entwicklung im Vergleich zum MSCI World und Entscheidungs-Tagebuch, stündlich aktualisiert.
+- [Das KI-Experiment: Ein Bot legt öffentlich an – KI investiert](https://www.ki-investiert.de/experiment/): Öffentliches KI-Experiment mit Demo-Depot: Ein regelbasierter Bot investiert in ETFs (MSCI World, Gold). Tagesstand, Regeln und Vergleich mit MSCI World, erklärt von den KI-Figuren Ada und Konrad.
+- [Kostenloses E-Book: Börse verstehen in 30 Minuten – KI investiert](https://www.ki-investiert.de/geschenk/): Unser Weihnachtsgeschenk bis 31.12.2026: das kostenlose E-Book „Börse verstehen in 30 Minuten“ mit ETF, Sparplan, Kosten, Risiko, Krypto und den Regeln unseres KI-Bots. Ohne Anmeldung herunterladen.
+- [Offizielle Kanäle – KI investiert](https://www.ki-investiert.de/kanaele/): Echt sind nur diese Kanäle von KI investiert. Wir schreiben dich nie privat an, verlangen nie Geld und geben keine Kauftipps per Nachricht.
+- [Pakete und Preise – KI investiert](https://www.ki-investiert.de/pakete/): Kostenlos starten mit Morning Show, Podcast und Live-Depot. Ab Januar 2027 Wochenbrief Plus (6 €), Insider (15 €) oder Premium (25 €) im Monat. Für Vermögensverwalter: Video-Briefing für 690 € im Monat.
+- [Podcast „Börse für Pendler“ – KI investiert](https://www.ki-investiert.de/podcast/): Jeden Börsentag die wichtigsten Markt-Nachrichten in wenigen Minuten, erklärt von den KI-Figuren Ada und Konrad. Bei Spotify, Apple Podcasts und Amazon Music.
+
+## Podcast-Abschriften
+- [Abschriften – Börse für Pendler | KI investiert](https://www.ki-investiert.de/podcast/abschrift/)
+- [Spezial: Anthropic an der Börse – alle Zahlen (19.11.) – Abschrift | Börse für Pendler](https://www.ki-investiert.de/podcast/abschrift/2026-11-19_anthropic.html)
+- [Anthropic-Aktie: erster Börsentag – Schluss 97,17 $ (19.11.) – Abschrift | Börse für Pendler](https://www.ki-investiert.de/podcast/abschrift/2026-11-19_anthropic_abend.html)
+- [Morning Show: Märkte, Fed und Termine heute (19.11.) – Abschrift | Börse für Pendler](https://www.ki-investiert.de/podcast/abschrift/2026-11-19_morning.html)
+- [Börse heute 20.11.: DAX, Anthropic-Börsengang und Walmart-Zahlen – Abschrift | Börse für Pendler](https://www.ki-investiert.de/podcast/abschrift/2026-11-20_morning.html)
+
+## Kontakt
+- info@ki-investiert.de
+- Impressum: https://itrk.legal/l/80s2-0-5z6g-08i2u-de.html
