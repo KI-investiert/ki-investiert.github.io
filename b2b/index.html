@@ -1,128 +1,95 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Wöchentliches Kapitalmarkt-Briefing für Vermögensverwalter | KI investiert</title>
-<meta name="description" content="Jede Woche ein rund fünfminütiges Video zur Marktlage plus 60-Sekunden-Kurzfassung im Design Ihres Hauses – mit KI-Moderation, geprüften Zahlen und klarer Kennzeichnung. Für Vermögensverwalter und Finanzmakler.">
-<style>
-  :root { --navy:#0a1628; --teal:#14b8a6; --grau:#94a3b8; --hell:#f1f5f9; }
-  * { box-sizing:border-box; }
-  body { margin:0; font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif; color:#0f172a; line-height:1.55; }
-  header { background:var(--navy); color:#fff; padding:56px 20px 64px; }
-  .wrap { max-width:980px; margin:0 auto; padding:0 20px; }
-  header .marke { color:var(--teal); font-weight:700; letter-spacing:.04em; font-size:.9rem; text-transform:uppercase; }
-  h1 { font-size:clamp(1.8rem,4vw,2.6rem); line-height:1.15; margin:.4em 0 .5em; }
-  header p { color:#cbd5e1; font-size:1.15rem; max-width:680px; }
-  .knopf { display:inline-block; background:var(--teal); color:var(--navy); font-weight:700; padding:14px 22px;
-           border-radius:10px; text-decoration:none; margin-top:14px; }
-  section { padding:52px 0; }
-  section.grau { background:var(--hell); }
-  h2 { font-size:1.6rem; margin:0 0 .8em; }
-  .raster { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:18px; }
-  .karte { background:#fff; border:1px solid #e2e8f0; border-radius:14px; padding:20px; }
-  .karte h3 { margin:.1em 0 .4em; font-size:1.1rem; }
-  video { width:100%; max-width:380px; border-radius:14px; background:#000; display:block; }
-  .zwei { display:grid; grid-template-columns:minmax(0,380px) 1fr; gap:32px; align-items:start; }
-  @media (max-width:760px){ .zwei { grid-template-columns:1fr; } }
-  ol.ablauf { padding-left:1.2em; } ol.ablauf li { margin:.5em 0; }
-  .preis { font-size:2.2rem; font-weight:800; color:var(--navy); }
-  .klein { color:#475569; font-size:.92rem; }
-  .hinweis { border-left:4px solid var(--teal); padding:12px 16px; background:#fff; border-radius:8px; }
-  footer { background:var(--navy); color:var(--grau); padding:28px 0; font-size:.9rem; }
-  footer a { color:#cbd5e1; }
-</style>
-</head>
-<body>
-<header>
-  <div class="wrap">
-    <div class="marke">KI investiert · für Vermögensverwalter</div>
-    <h1>Ihr wöchentliches Kapitalmarkt-Briefing – als Video, im Design Ihres Hauses.</h1>
-    <p>Jede Woche ein rund fünfminütiges Video zur Marktlage für Ihre Kunden, dazu eine 60-Sekunden-Kurzfassung für Social Media: geprüfte Zahlen, verständlich erklärt,
-       mit Ihrem Logo, Ihren Farben und Ihrem Namen. Sie geben frei – wir liefern.</p>
-    <a class="knopf" href="#test">Januar kostenlos testen</a>
-    <a class="knopf" style="background:#fff;margin-left:8px" href="mappe.pdf">Kurzmappe (PDF)</a>
-  </div>
-</header>
+<!DOCTYPE html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Wöchentliches Kapitalmarkt-Briefing für Vermögensverwalter – KI investiert</title><meta name="description" content="Jede Woche ein rund fünfminütiges Video zur Marktlage plus 60-Sekunden-Kurzfassung im Design Ihres Hauses, mit KI-Moderation, geprüften Zahlen und klarer Kennzeichnung. 690 € im Monat, Januar kostenlos testen."><link rel="canonical" href="https://www.ki-investiert.de/b2b/"><link rel="icon" href="/img/icon.png"><meta property="og:title" content="Wöchentliches Kapitalmarkt-Briefing für Vermögensverwalter – KI investiert"><meta property="og:description" content="Jede Woche ein rund fünfminütiges Video zur Marktlage plus 60-Sekunden-Kurzfassung im Design Ihres Hauses, mit KI-Moderation, geprüften Zahlen und klarer Kennzeichnung. 690 € im Monat, Januar kostenlos testen."><meta property="og:image" content="https://www.ki-investiert.de/img/duo.webp"><meta property="og:locale" content="de_DE"><style>
+.kopfbereich{padding:52px 0 56px;background:var(--tinte);color:#fff}
+.kopfbereich h1{font-size:clamp(30px,4.4vw,48px);margin:10px 0 16px;max-width:22ch}
+.kopfbereich .lead{font-size:19px;color:#C9D6E3;max-width:60ch}
+.kopfbereich .zeile-b{color:#5EEAD4;font-weight:700;font-size:15px}
+.kopfbereich .knopf.hell{background:#14B8A6;color:var(--tinte)}.kopfbereich .knopf.rand-h{border:2px solid #fff;color:#fff}
+.kopfbereich .knoepfe{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.video-spalte video{width:100%;max-width:380px;border-radius:14px;background:#000;display:block}
+.karten{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.karte{background:var(--weiss);border:1px solid var(--linie);border-radius:14px;padding:20px}.karte h3{font-size:18px;margin-bottom:6px}
+ol.ablauf{padding-left:22px;margin:0}ol.ablauf li{margin:8px 0}
+.hinweis{border-left:4px solid var(--petrol);background:var(--weiss);border-radius:8px;padding:14px 18px;margin-top:18px}
+.preis{font-size:42px;font-weight:800;letter-spacing:-1px}
+</style><style>
+:root{--tinte:#0B1F3A;--petrol:#14B8A6;--petrol-text:#0B7A6E;--papier:#F4F7FA;--weiss:#FFFFFF;--linie:#D5DEE7;
+--leise:#52606D;--verlust:#B42318;--gewinn:#0B7A6E;--max:1080px}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--papier);color:var(--tinte);font:17px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+a{color:var(--tinte);text-decoration-color:var(--petrol);text-decoration-thickness:2px;text-underline-offset:3px}
+a:hover{color:var(--petrol-text)}
+:focus-visible{outline:3px solid var(--petrol);outline-offset:3px;border-radius:4px}
+.zahl{font-variant-numeric:tabular-nums}
+.huelle{max-width:var(--max);margin:0 auto;padding:0 22px}
+header.kopf{border-bottom:1px solid var(--linie);background:var(--weiss)}
+header.kopf .huelle{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;flex-wrap:wrap}
+.marke{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;font-size:19px;letter-spacing:-.3px}
+.marke img{width:34px;height:34px;border-radius:8px}.marke b{color:var(--petrol-text)}
+nav.haupt{display:flex;gap:20px;flex-wrap:wrap;font-size:15px}nav.haupt a{text-decoration:none;color:var(--leise)}
+nav.haupt a:hover,nav.haupt a[aria-current]{color:var(--tinte);text-decoration:underline;text-decoration-color:var(--petrol)}
+.knopf{display:inline-block;padding:13px 20px;border-radius:10px;font-weight:700;text-decoration:none;font-size:16px;line-height:1.2}
+.knopf.voll{background:var(--tinte);color:#fff}.knopf.voll:hover{background:#12305a;color:#fff}
+.knopf.rand{border:2px solid var(--tinte);color:var(--tinte)}.knopf.rand:hover{background:var(--weiss)}
+.ki{display:inline-block;font-size:13px;color:var(--leise);border:1px solid var(--linie);border-radius:999px;padding:3px 10px;background:var(--weiss)}
+h1,h2,h3{line-height:1.15;letter-spacing:-.6px;margin:0}
+h1{font-size:clamp(34px,5.2vw,58px);font-weight:800}
+h2{font-size:clamp(26px,3.2vw,36px);font-weight:800}
+h3{font-size:20px;font-weight:700;letter-spacing:-.2px}
+p{margin:0 0 14px}.leise{color:var(--leise)}.klein{font-size:14px}
+.minus{color:var(--verlust)}.plus{color:var(--gewinn)}
+section.block{padding:64px 0;border-top:1px solid var(--linie)}
+.raster{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:32px 48px}
+@media(max-width:820px){.raster{grid-template-columns:1fr}section.block{padding:44px 0}}
+footer.fuss{border-top:1px solid var(--linie);background:var(--weiss);padding:36px 0 44px;font-size:14px;color:var(--leise)}
+footer.fuss .spalten{display:flex;flex-wrap:wrap;gap:12px 28px;margin-bottom:14px}footer.fuss a{color:var(--leise)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style></head><body><header class="kopf"><div class="huelle"><a class="marke" href="/"><img src="/img/icon.png" alt="" width="34" height="34"><span><b>KI</b> investiert</span></a><nav class="haupt" aria-label="Hauptnavigation"><a href="/depot/">Live-Depot</a><a href="/experiment/">Das Experiment</a><a href="/podcast/">Podcast</a><a href="/pakete/">Pakete</a><a href="/b2b/" aria-current="page">Für Vermögensverwalter</a></nav></div></header><main>
+<section class="kopfbereich"><div class="huelle">
+<div class="zeile-b">Für Vermögensverwalter und Finanzmakler</div>
+<h1>Ihr wöchentliches Kapitalmarkt-Briefing als Video, im Design Ihres Hauses.</h1>
+<p class="lead">Jede Woche ein rund fünfminütiges Video zur Marktlage für Ihre Kunden, dazu eine 60-Sekunden-Kurzfassung für Social Media: geprüfte Zahlen, verständlich erklärt, mit Ihrem Logo, Ihren Farben und Ihrem Namen. Sie geben frei, wir liefern.</p>
+<div class="knoepfe"><a class="knopf hell" href="#test">Januar kostenlos testen</a><a class="knopf rand-h" href="/b2b/mappe.pdf">Kurzmappe als PDF</a></div>
+</div></section>
 
-<section>
-  <div class="wrap zwei">
-    <div>
-      <!-- Musterbriefing: kunden/videos/2026-11-18_muster_briefing.mp4 (fiktives „Musterhaus Vermögensverwaltung“) -->
-      <video src="videos/muster_briefing.mp4" controls playsinline preload="metadata"></video>
-      <p class="klein">Beispiel im Design des fiktiven „Musterhaus Vermögensverwaltung“.</p>
-      <p style="margin-top:18px"><b>Langfassung ansehen (ca. 4,5 Minuten):</b></p>
-      <video src="videos/muster_briefing_lang.mp4" controls playsinline preload="none" style="max-width:100%"></video>
-      <p class="klein">Ganze Wochenausgabe mit Marktlage, stärksten und schwächsten großen Aktien und Terminen der Woche.</p>
-    </div>
-    <div>
-      <h2>Warum ein Video-Briefing?</h2>
-      <p>Ihre Kunden wollen wissen, was an den Märkten los ist – kurz, regelmäßig und von jemandem, dem sie vertrauen.
-         Ein eigenes Video jede Woche ist aufwendig. Wir übernehmen die Produktion; Sie behalten die Kontrolle.</p>
-      <div class="raster">
-        <div class="karte"><h3>Regelmäßiger Kontakt</h3>Ein fester Termin pro Woche – für Newsletter, Website, LinkedIn oder WhatsApp.</div>
-        <div class="karte"><h3>Ihr Auftritt</h3>Logo, Farben, Firmenname und Ihre Pflichtangaben im Abspann.</div>
-        <div class="karte"><h3>Kein Aufwand</h3>Kein Dreh, kein Studio, kein Schnitt. Freigabe per Klick.</div>
-      </div>
-    </div>
-  </div>
-</section>
+<section class="block"><div class="huelle raster"><div class="video-spalte">
+<!-- Musterbriefing des fiktiven „Musterhaus Vermögensverwaltung“ -->
+<video src="/b2b/videos/muster_briefing.mp4" controls playsinline preload="metadata"></video>
+<p class="leise klein" style="margin-top:8px">Beispiel im Design des fiktiven „Musterhaus Vermögensverwaltung“.</p>
+<p style="margin-top:18px"><b>Langfassung ansehen (ca. 4,5 Minuten)</b></p>
+<video src="/b2b/videos/muster_briefing_lang.mp4" controls playsinline preload="none"></video>
+<p class="leise klein" style="margin-top:8px">Ganze Wochenausgabe mit Marktlage, stärksten und schwächsten großen Aktien und Terminen der Woche.</p>
+</div><div>
+<h2>Warum ein Video-Briefing?</h2>
+<p>Ihre Kunden wollen wissen, was an den Märkten los ist: kurz, regelmäßig und von jemandem, dem sie vertrauen. Ein eigenes Video jede Woche ist aufwendig. Wir übernehmen die Produktion, Sie behalten die Kontrolle.</p>
+<div class="karten">
+<div class="karte"><h3>Regelmäßiger Kontakt</h3>Ein fester Termin pro Woche für Newsletter, Website, LinkedIn oder WhatsApp.</div>
+<div class="karte"><h3>Ihr Auftritt</h3>Logo, Farben, Firmenname und Ihre Pflichtangaben im Abspann.</div>
+<div class="karte"><h3>Kein Aufwand</h3>Kein Dreh, kein Studio, kein Schnitt. Freigabe per Klick.</div>
+</div></div></div></section>
 
-<section class="grau">
-  <div class="wrap">
-    <h2>Was drin ist</h2>
-    <div class="raster">
-      <div class="karte"><h3>Marktlage der Woche</h3>DAX, Euro Stoxx 50, S&amp;P 500, MSCI World, Gold, Euro/Dollar – Wochenveränderung aus Marktdaten.</div>
-      <div class="karte"><h3>Termine</h3>Zinsentscheide, Inflationsdaten und große Quartalszahlen der kommenden Woche.</div>
-      <div class="karte"><h3>Aktien der Woche</h3>Die großen Bewegungen und Unternehmenszahlen, sachlich eingeordnet – ohne Bewertung einzelner Titel. Krypto (Bitcoin) wählbar.</div>
-      <div class="karte"><h3>Einordnung</h3>Was bedeutet das für langfristige Anleger? Ruhig, sachlich, ohne Kauf- oder Verkaufsaussagen.</div>
-      <div class="karte"><h3>Zahlen doppelt geprüft</h3>Jede Zahl stammt aus Marktdaten und wird automatisch gegen eine zweite Quelle geprüft.</div>
-    </div>
-  </div>
-</section>
+<section class="block"><div class="huelle raster"><div><h2>Was drin ist</h2></div><div class="karten">
+<div class="karte"><h3>Marktlage der Woche</h3>DAX, Euro Stoxx 50, S&amp;P 500, MSCI World, Gold, Euro/Dollar: Wochenveränderung aus Marktdaten.</div>
+<div class="karte"><h3>Termine</h3>Zinsentscheide, Inflationsdaten und große Quartalszahlen der kommenden Woche.</div>
+<div class="karte"><h3>Aktien der Woche</h3>Die großen Bewegungen und Unternehmenszahlen, sachlich eingeordnet, ohne Bewertung einzelner Titel. Krypto (Bitcoin) wählbar.</div>
+<div class="karte"><h3>Einordnung</h3>Was bedeutet das für langfristige Anleger? Ruhig, sachlich, ohne Kauf- oder Verkaufsaussagen.</div>
+<div class="karte"><h3>Zahlen doppelt geprüft</h3>Jede Zahl stammt aus Marktdaten und wird automatisch gegen eine zweite Quelle geprüft.</div>
+</div></div></section>
 
-<section>
-  <div class="wrap">
-    <h2>So läuft es ab</h2>
-    <ol class="ablauf">
-      <li><b>Einrichtung:</b> Sie schicken uns Logo, Farben und Ihre Pflichtangaben.</li>
-      <li><b>Jeden Freitag:</b> Sie erhalten den Entwurf Ihres Briefings (Video + Text).</li>
-      <li><b>Freigabe:</b> Sie prüfen und geben frei – oder sagen uns, was geändert werden soll.</li>
-      <li><b>Veröffentlichung:</b> Sie verbreiten das Video über Ihre Kanäle. Nutzungsrechte inklusive.</li>
-    </ol>
-    <div class="hinweis klein">
-      <b>Transparent und regelkonform:</b> Die Moderation erfolgt durch KI-Figuren und ist im Video deutlich als
-      KI-generiert gekennzeichnet (EU-KI-Verordnung). Die Briefings enthalten keine Anlageberatung und keine
-      Empfehlungen zu einzelnen Wertpapieren. <!-- Formulierung „Marketingmitteilung“ nach Huber-Antwort ergänzen -->
-    </div>
-  </div>
-</section>
+<section class="block"><div class="huelle raster"><div><h2>So läuft es ab</h2></div><div>
+<ol class="ablauf"><li><b>Einrichtung:</b> Sie schicken uns Logo, Farben und Ihre Pflichtangaben.</li>
+<li><b>Jeden Freitag:</b> Sie erhalten den Entwurf Ihres Briefings (Video und Text).</li>
+<li><b>Freigabe:</b> Sie prüfen und geben frei, oder sagen uns, was geändert werden soll.</li>
+<li><b>Veröffentlichung:</b> Sie verbreiten das Video über Ihre Kanäle. Nutzungsrechte inklusive.</li></ol>
+<div class="hinweis klein"><b>Transparent und regelkonform:</b> Die Moderation erfolgt durch KI-Figuren und ist im Video deutlich als KI-generiert gekennzeichnet (EU-KI-Verordnung). Die Briefings enthalten keine Anlageberatung und keine Empfehlungen zu einzelnen Wertpapieren.<!-- Formulierung „Marketingmitteilung“ nach Huber-Antwort ergänzen --></div>
+</div></div></section>
 
-<section class="grau" id="test">
-  <div class="wrap zwei">
-    <div>
-      <h2>Preis</h2>
-      <div class="preis">690 € <span class="klein">pro Monat</span></div>
-      <p class="klein">Jede Woche Hauptbriefing (ca. 5 Min.) und Kurzfassung (60 Sek.), durchgehend moderiert, Ihr Branding, Nutzungsrechte für Ihre Kanäle, monatlich kündbar.
-         <!-- Kleinunternehmer-Hinweis gemäß § 19 UStG nach Huber-/Steuerberater-Antwort ergänzen --></p>
-    </div>
-    <div>
-      <h2>Januar kostenlos testen</h2>
-      <p>Wir erstellen Ihnen im Januar vier Briefings in Ihrem Design – kostenlos und unverbindlich.
-         Danach entscheiden Sie, ob Sie weitermachen.</p>
-      <p>Schreiben Sie uns: <a href="mailto:ki.investiert@gmail.com?subject=Test-Briefing%20Januar"><b>ki.investiert@gmail.com</b></a></p>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap">
-    KI investiert · Ein Angebot von Waldemar Schmunk ·
-    <a href="../">Alle Kanäle</a> ·
-    <a href="https://itrk.legal/l/80s2-0-5z6g-08i2u-de.html">Impressum</a> ·
-    <a href="https://itrk.legal/l/80s2-f4-5z6g-6kge3.html">Datenschutz</a><br>
-    Alle Inhalte KI-gestützt erstellt. Keine Anlageberatung.
-  </div>
-</footer>
-</body>
-</html>
+<section class="block" id="test"><div class="huelle raster"><div><h2>Preis</h2>
+<div class="preis zahl">690 € <span class="leise klein">pro Monat</span></div>
+<p class="leise klein">Jede Woche Hauptbriefing (ca. 5 Min.) und Kurzfassung (60 Sek.), durchgehend moderiert, Ihr Branding, Nutzungsrechte für Ihre Kanäle, monatlich kündbar.<!-- Kleinunternehmer-Hinweis gemäß § 19 UStG nach Huber-/Steuerberater-Antwort ergänzen --></p>
+</div><div>
+<h2>Januar kostenlos testen</h2>
+<p>Wir erstellen Ihnen im Januar vier Briefings in Ihrem Design, kostenlos und unverbindlich. Danach entscheiden Sie, ob Sie weitermachen.</p>
+<p><a class="knopf voll" href="mailto:info@ki-investiert.de?subject=Test-Briefing%20Januar">Test-Briefing anfragen</a></p>
+<p class="leise klein">Oder schreiben Sie uns direkt an <a href="mailto:info@ki-investiert.de?subject=Test-Briefing%20Januar">info@ki-investiert.de</a>.</p>
+</div></div></section>
+</main><footer class="fuss"><div class="huelle"><div class="spalten"><a href="https://itrk.legal/l/80s2-0-5z6g-08i2u-de.html">Impressum</a><a href="https://itrk.legal/l/80s2-f4-5z6g-6kge3.html">Datenschutz</a><a href="/kanaele/">Offizielle Kanäle</a><a href="/pakete/#fragen">Häufige Fragen</a><a href="mailto:info@ki-investiert.de">info@ki-investiert.de</a></div><p>Ada und Konrad sind KI-Figuren. Alle Inhalte dienen der Information und sind keine Anlageberatung. DYOR (Do Your Own Research): Führe vor jeder Entscheidung deine eigene Recherche durch. Der Bot handelt in einem Demo-Konto mit Spielgeld. Kurse können fallen, Verluste sind möglich.</p><p>© 2026 KI investiert</p></div></footer></body></html>
