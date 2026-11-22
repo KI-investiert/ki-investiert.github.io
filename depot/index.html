@@ -1,0 +1,111 @@
+<!DOCTYPE html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Live-Depot des KI-Bots – KI investiert</title>
+<meta name="description" content="Das Demo-Depot des regelbasierten Bots von KI investiert: Depotwert, Aufteilung, Entwicklung im Vergleich zum MSCI World und Entscheidungs-Tagebuch, stündlich aktualisiert.">
+<link rel="canonical" href="https://www.ki-investiert.de/depot/">
+<style>
+body{margin:0;font-family:-apple-system,'Segoe UI',Roboto,sans-serif;background:#f8fafc;color:#0f172a;line-height:1.45}
+main{max-width:760px;margin:0 auto;padding:20px}h1{font-size:26px;margin:8px 0 4px}h2{font-size:19px;margin:28px 0 8px}
+.karte{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:16px;margin:12px 0}
+.gross{font-size:36px;font-weight:700;letter-spacing:-.5px}.plus{color:#15803d}.minus{color:#b91c1c}.leise{color:#64748b;font-size:14px}
+table{width:100%;border-collapse:collapse}td,th{padding:8px 4px;border-bottom:1px solid #e2e8f0;text-align:left;vertical-align:middle}
+td.z,th.z{text-align:right;white-space:nowrap}.balken{height:8px;border-radius:4px;margin-top:4px}
+a{color:#1d4ed8}.ki{display:inline-block;background:#eef2ff;color:#3730a3;border-radius:6px;padding:2px 8px;font-size:13px}
+.zwei{display:flex;gap:18px;align-items:center;flex-wrap:wrap}.legende div{display:flex;align-items:center;gap:8px;margin:5px 0;font-size:14px}
+details{border-bottom:1px solid #e2e8f0;padding:10px 0}details:last-child{border-bottom:0}summary{cursor:pointer;list-style:none;display:grid;grid-template-columns:18px 1fr auto;gap:8px;align-items:center;text-align:left}summary>span:first-of-type{justify-self:start}summary::-webkit-details-marker{display:none}summary:before{content:"\25B8";color:#64748b}details[open] summary:before{content:"\25BE"}.marke{display:inline-block;font-size:12px;border-radius:6px;padding:1px 7px;margin-left:6px;background:#fef3c7;color:#92400e}.innen{padding:8px 0 2px 18px;font-size:14px}.innen table td{padding:4px}.punkt{width:12px;height:12px;border-radius:3px;flex:none}svg text{font-family:inherit}
+</style></head><body><main>
+<p><a href="/">&larr; KI investiert</a> &middot; <span class="ki">Ada &amp; Konrad sind KI-Figuren</span></p>
+<h1>Live-Depot des Bots</h1>
+<p class="leise" id="stand">Daten werden geladen &hellip;</p>
+<div class="karte"><div class="leise">Depotwert &middot; eingezahlt <span id="ein">&ndash;</span></div><div class="gross" id="wert">&ndash;</div><div id="erg"></div></div>
+
+<h2>Entwicklung seit dem Start</h2>
+<div class="karte"><div id="linie"></div><p class="leise">Wertentwicklung in Prozent, je Tag der letzte Stand. Alle vier bekommen dasselbe Geld zum selben Zeitpunkt.</p></div>
+
+<h2>Aufteilung</h2>
+<div class="karte"><div class="zwei"><div id="ring"></div><div class="legende" id="legende"></div></div></div>
+
+<h2>Positionen</h2><div class="karte"><table id="pos"></table></div>
+
+<h2>Vergleich: gleiches Geld, andere Strategie</h2><div class="karte"><p class="leise" style="margin-top:0">Daneben laufen drei Schatten-Depots: Sie bekommen dasselbe Geld zum selben Zeitpunkt wie der Bot, folgen aber einer anderen einfachen Strategie. So sieht man, ob sich die Regeln des Bots lohnen.</p><table id="vgl"></table></div>
+
+<h2>Logbuch des Bots</h2><div class="karte"><p class="leise" style="margin-top:0">Ein Eintrag je Börsentag, neuester oben. Antippen zum Aufklappen. Die Depotzahlen kommen stündlich, Entscheidungen des Bots trägt er abends ein.</p><div id="tb"></div></div>
+
+<h2>Aktien- und Krypto-Topf</h2><div class="karte" id="toepfe"></div>
+
+<p class="leise" id="hinweis"></p>
+<p class="leise">Regeln und Methodik: <a href="/experiment/">Das KI-Experiment</a> &middot; <a href="https://itrk.legal/l/80s2-cp-5z6g-w1akn.html?impressum-datenschutz">Impressum &amp; Datenschutz</a></p>
+<script>
+const FARBEN=['#2563eb','#f59e0b','#10b981','#8b5cf6','#ef4444','#06b6d4','#94a3b8'];
+const eur=x=>x.toLocaleString('de-DE',{minimumFractionDigits:2,maximumFractionDigits:2})+' €';
+const pct=x=>(x>0?'+':'')+x.toLocaleString('de-DE',{minimumFractionDigits:2,maximumFractionDigits:2})+' %';
+const kl=x=>x>0?'plus':(x<0?'minus':'');
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const tag=iso=>{const [j,m,t]=String(iso).slice(0,10).split('-');return t+'.'+m+'.'+j;};
+const kurz=iso=>{const [j,m,t]=String(iso).slice(0,10).split('-');return t+'.'+m+'.';};
+
+const LINIEN=[{k:'bot_pct',n:'Unser Bot',f:'#2563eb',w:3.5},{k:'msci_pct',n:'Nur MSCI World',f:'#94a3b8',w:2.5},{k:'robo_pct',n:'Robo-Depot 70/30',f:'#10b981',w:2.5},{k:'momentum_pct',n:'2 stärkste Märkte',f:'#f59e0b',w:2.5}];
+function linie(v){
+  if(!v||v.length<2)return '<p class="leise">Noch zu wenige Tage für eine Grafik.</p>';
+  const da=LINIEN.filter(l=>v.every(p=>typeof p[l.k]==='number'));
+  const W=680,H=250,L=52,R=16,O=16,U=36;
+  const alle=v.flatMap(p=>da.map(l=>p[l.k])).concat([0]);let lo=Math.min(...alle),hi=Math.max(...alle);
+  const pad=Math.max(0.5,(hi-lo)*0.15);lo=Math.floor(lo-pad);hi=Math.ceil(hi+pad);
+  const X=i=>L+i*(W-L-R)/(v.length-1),Y=y=>O+(hi-y)*(H-O-U)/(hi-lo);
+  const schritt=Math.max(1,Math.ceil((hi-lo)/5));let g='';
+  for(let y=Math.ceil(lo/schritt)*schritt;y<=hi;y+=schritt){g+='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+Y(y)+'" y2="'+Y(y)+'" stroke="'+(y===0?'#94a3b8':'#e2e8f0')+'"/><text x="'+(L-8)+'" y="'+(Y(y)+4)+'" text-anchor="end" font-size="12" fill="#64748b">'+(y>0?'+':'')+y+' %</text>';}
+  const n=v.length,jede=Math.max(1,Math.ceil(n/6));
+  v.forEach((p,i)=>{if(i%jede===0||i===n-1)g+='<text x="'+X(i)+'" y="'+(H-12)+'" text-anchor="middle" font-size="12" fill="#64748b">'+kurz(p.datum)+'</text>';});
+  const pfad=k=>v.map((p,i)=>(i?'L':'M')+X(i).toFixed(1)+' '+Y(p[k]).toFixed(1)).join(' ');
+  const e=v[n-1];let striche='';
+  da.slice().reverse().forEach(l=>{striche+='<path d="'+pfad(l.k)+'" fill="none" stroke="'+l.f+'" stroke-width="'+l.w+'" stroke-linejoin="round"/><circle cx="'+X(n-1)+'" cy="'+Y(e[l.k])+'" r="4" fill="'+l.f+'"/>';});
+  const leg='<div class="legende" style="display:flex;flex-wrap:wrap;gap:4px 16px;margin-top:6px">'+da.map(l=>'<div><span class="punkt" style="background:'+l.f+'"></span>'+l.n+': <b class="'+kl(e[l.k])+'">'+pct(e[l.k])+'</b></div>').join('')+'</div>';
+  return '<svg viewBox="0 0 '+W+' '+H+'" width="100%" role="img" aria-label="Entwicklung des Bots im Vergleich">'+g+striche+'</svg>'+leg;
+}
+
+function ring(teile){
+  const S=180,r=70,b=26,c=S/2,U=2*Math.PI*r;let pos=0,s='';
+  const sum=teile.reduce((a,t)=>a+t.wert,0)||1;
+  teile.forEach((t,i)=>{const l=t.wert/sum*U;s+='<circle cx="'+c+'" cy="'+c+'" r="'+r+'" fill="none" stroke="'+FARBEN[i%FARBEN.length]+'" stroke-width="'+b+'" stroke-dasharray="'+l+' '+(U-l)+'" stroke-dashoffset="'+(-pos)+'" transform="rotate(-90 '+c+' '+c+')"/>';pos+=l;});
+  return '<svg viewBox="0 0 '+S+' '+S+'" width="180" height="180" role="img" aria-label="Aufteilung des Depots">'+s+
+   '<text x="'+c+'" y="'+(c-4)+'" text-anchor="middle" font-size="13" fill="#64748b">'+teile.length+' Teile</text><text x="'+c+'" y="'+(c+16)+'" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">'+eur(sum)+'</text></svg>';
+}
+
+function logbuch(d){
+  const tb={};(d.tagebuch||[]).forEach(t=>{(tb[t.datum]=tb[t.datum]||[]).push(t);});
+  const v=(d.verlauf||[]).slice();const tage=new Set(v.map(p=>p.datum).concat(Object.keys(tb)));
+  const wochenende=t=>[0,6].includes(new Date(t+'T12:00:00').getDay());
+  const liste=[...tage].sort().reverse().filter(t=>tb[t]||!wochenende(t));if(!liste.length)return '<p class="leise">Noch keine Einträge.</p>';
+  const nach={};v.forEach((p,i)=>{nach[p.datum]={p,vor:i?v[i-1]:null};});
+  return liste.map((t,j)=>{const e=nach[t],ent=tb[t]||[];
+    const tag_=e&&e.vor?(e.p.bot_pct-e.vor.bot_pct):null;
+    const kopf='<span><b>'+tag(t)+'</b>'+(ent.length?'<span class="marke">Entscheidung</span>':'')+'</span>'+
+      (e?'<span class="'+kl(e.p.bot_pct)+'">'+pct(e.p.bot_pct)+'</span>':'');
+    let innen='';
+    if(ent.length)innen+=ent.map(x=>'<p style="margin:4px 0"><b>'+esc(x.aktion)+'</b><br><span class="leise">'+esc(x.warum)+'</span></p>').join('');
+    else innen+='<p class="leise" style="margin:4px 0">Keine Entscheidung des Bots an diesem Tag.</p>';
+    if(e){innen+='<table>'+LINIEN.filter(l=>typeof e.p[l.k]==='number').map(l=>'<tr><td><span class="punkt" style="display:inline-block;background:'+l.f+'"></span> '+l.n+'</td><td class="z '+kl(e.p[l.k])+'">'+pct(e.p[l.k])+' seit Start</td></tr>').join('')+'</table>';
+      if(tag_!==null)innen+='<p class="leise" style="margin:6px 0 0">Bot an diesem Tag: <span class="'+kl(tag_)+'">'+(tag_>0?'+':'')+tag_.toLocaleString('de-DE',{minimumFractionDigits:2,maximumFractionDigits:2})+' Prozentpunkte</span></p>';}
+    return '<details'+(j===0?' open':'')+'><summary>'+kopf+'</summary><div class="innen">'+innen+'</div></details>';}).join('');
+}
+
+function zeige(d){
+  document.getElementById('stand').textContent='Stand: '+tag(d.stand)+', '+String(d.stand).slice(11,16)+' Uhr · '+d.art;
+  document.getElementById('ein').textContent=eur(d.eingezahlt_eur);
+  document.getElementById('wert').textContent=eur(d.wert_eur);
+  document.getElementById('erg').innerHTML='<span class="'+kl(d.ergebnis_pct)+'"><b>'+pct(d.ergebnis_pct)+'</b></span> seit dem Start · geparkt (noch nicht investiert): '+eur(d.bargeld_eur)+' · '+(d.kapitalschutz_stufe?'Kapitalschutz Stufe '+d.kapitalschutz_stufe+' aktiv':'Kapitalschutz nicht aktiv');
+  document.getElementById('linie').innerHTML=linie(d.verlauf);
+  const teile=d.positionen.map(p=>({name:p.name,wert:p.wert_eur})).concat(d.bargeld_eur>0?[{name:'Geparkt',wert:d.bargeld_eur}]:[]);
+  document.getElementById('ring').innerHTML=ring(teile);
+  const sum=teile.reduce((a,t)=>a+t.wert,0)||1;
+  document.getElementById('legende').innerHTML=teile.map((t,i)=>'<div><span class="punkt" style="background:'+FARBEN[i%FARBEN.length]+'"></span>'+esc(t.name)+' · '+(t.wert/sum*100).toLocaleString('de-DE',{maximumFractionDigits:1})+' %</div>').join('');
+  document.getElementById('pos').innerHTML='<tr><th>Markt</th><th class="z">Wert</th><th class="z">Anteil</th><th class="z">Ergebnis seit Kauf</th></tr>'+d.positionen.map((p,i)=>'<tr><td>'+esc(p.name)+'<div class="balken" style="width:'+p.anteil_pct+'%;background:'+FARBEN[i%FARBEN.length]+'"></div></td><td class="z">'+eur(p.wert_eur)+'</td><td class="z">'+p.anteil_pct.toLocaleString('de-DE')+' %</td><td class="z '+kl(p.ergebnis_eur)+'">'+eur(p.ergebnis_eur)+'<br><small>'+pct(p.ergebnis_pct??0)+'</small></td></tr>').join('');
+  const zeilen=[{name:'Unser Bot',erklaerung:d.bot_erklaerung,wert_eur:d.wert_eur,ergebnis_pct:d.ergebnis_pct,fett:1}].concat(d.vergleich);
+  document.getElementById('vgl').innerHTML=zeilen.map(v=>'<tr><td>'+(v.fett?'<b>':'')+esc(v.name)+(v.fett?'</b>':'')+(v.erklaerung?'<br><span class="leise">'+esc(v.erklaerung)+'</span>':'')+'</td><td class="z">'+eur(v.wert_eur)+'</td><td class="z '+kl(v.ergebnis_pct)+'">'+pct(v.ergebnis_pct)+'</td></tr>').join('');
+  document.getElementById('tb').innerHTML=logbuch(d);
+  const a=d.toepfe.aktien,k=d.toepfe.krypto;
+  document.getElementById('toepfe').innerHTML='<p><b>Aktien-Topf</b> ('+eur(a.startgeld_eur)+' Demo-Geld): '+esc(a.status)+'</p><p><b>Krypto-Topf</b> ('+eur(k.startgeld_eur)+' Demo-Geld): '+esc(k.status)+'</p>';
+  document.getElementById('hinweis').textContent=d.hinweis;
+}
+async function laden(){try{/*DATEN*/const r=await fetch('/depot_live.json?t='+Date.now());zeige(await r.json());}catch(e){document.getElementById('stand').textContent='Die Daten sind gerade nicht erreichbar. Bitte später neu laden.';}}
+laden();setInterval(laden,300000);
+</script></main></body></html>
