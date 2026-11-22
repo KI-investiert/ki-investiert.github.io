@@ -1,0 +1,12 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <title>KI investiert</title>
+  <desc>Fintech logo with a navy rounded-square icon, a rising teal chart and the wordmark KI investiert.</desc>
+  <rect width="1024" height="1024" fill="#F8FAFC" />
+  <g id="app-icon">
+    <rect x="242" y="150" width="539" height="534" rx="115" fill="#0B1F3A" />
+    <path d="M290 590 371 487H451L523 390H601L654 321" fill="none" stroke="#14B8A6" stroke-width="25" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="685" cy="283" r="47" fill="#0B1F3A" stroke="#14B8A6" stroke-width="12" />
+    <circle cx="685" cy="283" r="26.5" fill="#14B8A6" />
+  </g>
+  <text id="wordmark" x="512" y="871" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, Helvetica, sans-serif" font-size="140" font-weight="800" letter-spacing="-4"><tspan fill="#14B8A6">KI</tspan><tspan fill="#0B1F3A"> investiert</tspan></text>
+</svg>
