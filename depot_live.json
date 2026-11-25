@@ -1,46 +1,46 @@
 {
- "stand": "2026-11-25T09:00",
+ "stand": "2026-11-25T10:00",
  "art": "Demo-Depot bei Trading 212 mit Spielgeld, kein echtes Geld",
  "eingezahlt_eur": 1000.0,
- "wert_eur": 948.55,
- "ergebnis_pct": -5.14,
+ "wert_eur": 947.95,
+ "ergebnis_pct": -5.2,
  "bargeld_eur": 31.8,
  "kapitalschutz_stufe": 0,
  "positionen": [
   {
    "name": "MSCI World",
-   "wert_eur": 571.38,
-   "anteil_pct": 60.2,
-   "ergebnis_eur": -27.91,
-   "ergebnis_pct": -4.66
+   "wert_eur": 571.85,
+   "anteil_pct": 60.3,
+   "ergebnis_eur": -27.44,
+   "ergebnis_pct": -4.58
   },
   {
    "name": "Gold",
-   "wert_eur": 138.92,
+   "wert_eur": 137.93,
    "anteil_pct": 14.6,
-   "ergebnis_eur": -11.35,
-   "ergebnis_pct": -7.55
+   "ergebnis_eur": -12.34,
+   "ergebnis_pct": -8.21
   },
   {
    "name": "S&P 500",
-   "wert_eur": 88.85,
+   "wert_eur": 88.77,
    "anteil_pct": 9.4,
-   "ergebnis_eur": -4.23,
-   "ergebnis_pct": -4.54
+   "ergebnis_eur": -4.31,
+   "ergebnis_pct": -4.63
   },
   {
    "name": "DAX",
-   "wert_eur": 87.61,
-   "anteil_pct": 9.2,
-   "ergebnis_eur": -6.12,
-   "ergebnis_pct": -6.53
+   "wert_eur": 87.86,
+   "anteil_pct": 9.3,
+   "ergebnis_eur": -5.87,
+   "ergebnis_pct": -6.26
   },
   {
    "name": "Nasdaq 100",
-   "wert_eur": 29.98,
-   "anteil_pct": 3.2,
-   "ergebnis_eur": -1.85,
-   "ergebnis_pct": -5.81
+   "wert_eur": 29.75,
+   "anteil_pct": 3.1,
+   "ergebnis_eur": -2.08,
+   "ergebnis_pct": -6.53
   }
  ],
  "bot_erklaerung": "Jeden Monat 1.000 € nach festen Regeln: 600 € MSCI World und 150 € Gold als Kern. 250 € gehen zur Hälfte gleichmäßig auf S&P 500, Nasdaq 100, DAX und Gold, zur Hälfte in die 2 stärksten davon. Bei erhöhter Krisengefahr parkt der Bot dieses Geld, statt zu kaufen.",
@@ -48,20 +48,20 @@
   {
    "name": "Nur MSCI World (ein ETF)",
    "erklaerung": "Das ganze Geld in einen weltweiten Aktien-ETF, sonst nichts. Der einfachste Vergleich.",
-   "wert_eur": 953.06,
-   "ergebnis_pct": -4.69
+   "wert_eur": 953.84,
+   "ergebnis_pct": -4.62
   },
   {
    "name": "Robo-Depot (70 % Aktien, 30 % Anleihen)",
    "erklaerung": "Wie viele Robo-Advisor: 70 % weltweite Aktien, 30 % Euro-Staatsanleihen, 0,75 % Gebühr im Jahr. Schwankt meist weniger.",
-   "wert_eur": 969.21,
-   "ergebnis_pct": -3.08
+   "wert_eur": 970.33,
+   "ergebnis_pct": -2.97
   },
   {
    "name": "Immer die 2 stärksten Märkte",
    "erklaerung": "Das ganze Geld in die 2 Märkte (aus S&P 500, Nasdaq 100, DAX, Gold) mit der besten Entwicklung der letzten 12 Monate.",
-   "wert_eur": 944.43,
-   "ergebnis_pct": -5.56
+   "wert_eur": 945.26,
+   "ergebnis_pct": -5.47
   }
  ],
  "verlauf": [
@@ -130,10 +130,10 @@
   },
   {
    "datum": "2026-11-25",
-   "bot_pct": -5.14,
-   "msci_pct": -4.69,
-   "robo_pct": -3.08,
-   "momentum_pct": -5.56
+   "bot_pct": -5.2,
+   "msci_pct": -4.62,
+   "robo_pct": -2.97,
+   "momentum_pct": -5.47
   }
  ],
  "tagebuch": [
