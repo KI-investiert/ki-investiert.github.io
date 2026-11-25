@@ -138,24 +138,29 @@
  ],
  "tagebuch": [
   {
+   "datum": "2026-11-25",
+   "aktion": "Keine Zukäufe – Krisen-Score 46 (erhöht).",
+   "warum": "Der Bot pausiert lieber, als bei erhöhtem Krisen-Score nachzukaufen. So steht es in seinen Regeln."
+  },
+  {
    "datum": "2026-11-24",
    "aktion": "Keine Zukäufe – Krisen-Score 51 (erhöht).",
-   "warum": "Lieber eine Chance verpassen als in einen Absturz hinein."
+   "warum": "Der Bot pausiert lieber, als bei erhöhtem Krisen-Score nachzukaufen. So steht es in seinen Regeln."
   },
   {
    "datum": "2026-11-23",
    "aktion": "Keine Zukäufe – Krisen-Score 50 (erhöht).",
-   "warum": "Lieber eine Chance verpassen als in einen Absturz hinein."
+   "warum": "Der Bot pausiert lieber, als bei erhöhtem Krisen-Score nachzukaufen. So steht es in seinen Regeln."
   },
   {
    "datum": "2026-11-22",
    "aktion": "Keine Zukäufe – Krisen-Score 52 (erhöht).",
-   "warum": "Lieber eine Chance verpassen als in einen Absturz hinein."
+   "warum": "Der Bot pausiert lieber, als bei erhöhtem Krisen-Score nachzukaufen. So steht es in seinen Regeln."
   },
   {
    "datum": "2026-11-21",
    "aktion": "Keine Zukäufe – Krisen-Score 52 (erhöht).",
-   "warum": "Lieber eine Chance verpassen als in einen Absturz hinein."
+   "warum": "Der Bot pausiert lieber, als bei erhöhtem Krisen-Score nachzukaufen. So steht es in seinen Regeln."
   },
   {
    "datum": "2026-11-16",
