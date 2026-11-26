@@ -1,148 +1,76 @@
 {
  "stand": "2026-11-26T21:00",
- "art": "Demo-Depot bei Trading 212 mit Spielgeld, kein echtes Geld",
+ "art": "Demo-Depot mit Spielgeld, kein echtes Geld",
+ "werte_ausgeblendet": true,
  "eingezahlt_eur": 1000.0,
- "wert_eur": 956.33,
- "ergebnis_pct": -4.37,
- "bargeld_eur": 31.8,
- "kapitalschutz_stufe": 0,
  "positionen": [
   {
    "name": "MSCI World",
-   "wert_eur": 577.16,
-   "anteil_pct": 60.4,
-   "ergebnis_eur": -22.13,
-   "ergebnis_pct": -3.69
+   "stueck": 4.587,
+   "topf": "Kern"
   },
   {
    "name": "Gold",
-   "wert_eur": 139.03,
-   "anteil_pct": 14.5,
-   "ergebnis_eur": -11.24,
-   "ergebnis_pct": -7.48
+   "stueck": 1.328,
+   "topf": "Kern und Satellit"
   },
   {
    "name": "S&P 500",
-   "wert_eur": 89.73,
-   "anteil_pct": 9.4,
-   "ergebnis_eur": -3.35,
-   "ergebnis_pct": -3.6
+   "stueck": 0.126,
+   "topf": "Satellit"
   },
   {
    "name": "DAX",
-   "wert_eur": 88.4,
-   "anteil_pct": 9.2,
-   "ergebnis_eur": -5.33,
-   "ergebnis_pct": -5.69
+   "stueck": 0.425,
+   "topf": "Satellit"
   },
   {
    "name": "Nasdaq 100",
-   "wert_eur": 30.21,
-   "anteil_pct": 3.2,
-   "ergebnis_eur": -1.62,
-   "ergebnis_pct": -5.09
+   "stueck": 0.022,
+   "topf": "Satellit"
   }
  ],
- "bot_erklaerung": "Jeden Monat 1.000 € nach festen Regeln: 600 € MSCI World und 150 € Gold als Kern. 250 € gehen zur Hälfte gleichmäßig auf S&P 500, Nasdaq 100, DAX und Gold, zur Hälfte in die 2 stärksten davon. Bei erhöhter Krisengefahr parkt der Bot dieses Geld, statt zu kaufen.",
- "vergleich": [
-  {
-   "name": "Nur MSCI World (ein ETF)",
-   "erklaerung": "Das ganze Geld in einen weltweiten Aktien-ETF, sonst nichts. Der einfachste Vergleich.",
-   "wert_eur": 962.7,
-   "ergebnis_pct": -3.73
-  },
-  {
-   "name": "Robo-Depot (70 % Aktien, 30 % Anleihen)",
-   "erklaerung": "Wie viele Robo-Advisor: 70 % weltweite Aktien, 30 % Euro-Staatsanleihen, 0,75 % Gebühr im Jahr. Schwankt meist weniger.",
-   "wert_eur": 976.77,
-   "ergebnis_pct": -2.32
-  },
-  {
-   "name": "Immer die 2 stärksten Märkte",
-   "erklaerung": "Das ganze Geld in die 2 Märkte (aus S&P 500, Nasdaq 100, DAX, Gold) mit der besten Entwicklung der letzten 12 Monate.",
-   "wert_eur": 953.33,
-   "ergebnis_pct": -4.67
-  }
- ],
- "verlauf": [
+ "kaeufe": [
   {
    "datum": "2026-11-16",
-   "bot_pct": -0.2,
-   "msci_pct": -0.25,
-   "robo_pct": -0.19,
-   "momentum_pct": -0.21
+   "markt": "S&P 500",
+   "topf": "Satellit",
+   "stueck": 0.126
   },
   {
-   "datum": "2026-11-17",
-   "bot_pct": -2.29,
-   "msci_pct": -2.77,
-   "robo_pct": -1.89,
-   "momentum_pct": -2.8
+   "datum": "2026-11-16",
+   "markt": "Nasdaq 100",
+   "topf": "Satellit",
+   "stueck": 0.022
   },
   {
-   "datum": "2026-11-18",
-   "bot_pct": -2.77,
-   "msci_pct": -2.75,
-   "robo_pct": -1.85,
-   "momentum_pct": -3.24
+   "datum": "2026-11-16",
+   "markt": "MSCI World",
+   "topf": "Kern",
+   "stueck": 4.587
   },
   {
-   "datum": "2026-11-19",
-   "bot_pct": -3.21,
-   "msci_pct": -2.99,
-   "robo_pct": -2.12,
-   "momentum_pct": -3.75
+   "datum": "2026-11-16",
+   "markt": "Gold",
+   "topf": "Satellit",
+   "stueck": 0.277
   },
   {
-   "datum": "2026-11-20",
-   "bot_pct": -6.37,
-   "msci_pct": -6.11,
-   "robo_pct": -4.14,
-   "momentum_pct": -6.73
+   "datum": "2026-11-16",
+   "markt": "Gold",
+   "topf": "Kern",
+   "stueck": 1.051
   },
   {
-   "datum": "2026-11-21",
-   "bot_pct": -6.37,
-   "msci_pct": -6.11,
-   "robo_pct": -4.14,
-   "momentum_pct": -6.73
-  },
-  {
-   "datum": "2026-11-22",
-   "bot_pct": -6.37,
-   "msci_pct": -6.11,
-   "robo_pct": -4.15,
-   "momentum_pct": -6.73
-  },
-  {
-   "datum": "2026-11-23",
-   "bot_pct": -3.3,
-   "msci_pct": -3.1,
-   "robo_pct": -1.96,
-   "momentum_pct": -4.06
-  },
-  {
-   "datum": "2026-11-24",
-   "bot_pct": -5.14,
-   "msci_pct": -4.69,
-   "robo_pct": -3.06,
-   "momentum_pct": -5.56
-  },
-  {
-   "datum": "2026-11-25",
-   "bot_pct": -7.05,
-   "msci_pct": -6.47,
-   "robo_pct": -4.26,
-   "momentum_pct": -7.19
-  },
-  {
-   "datum": "2026-11-26",
-   "bot_pct": -4.37,
-   "msci_pct": -3.73,
-   "robo_pct": -2.32,
-   "momentum_pct": -4.67
+   "datum": "2026-11-16",
+   "markt": "DAX",
+   "topf": "Satellit",
+   "stueck": 0.425
   }
  ],
+ "bot_erklaerung": "Jeden Monat 1.000 € Demo-Geld nach festen Regeln: 600 € MSCI World und 150 € Gold als Kern. 250 € gehen zur Hälfte gleichmäßig auf S&P 500, Nasdaq 100, DAX und Gold, zur Hälfte in die 2 stärksten davon. Der Bot rechnet den Kaufplan, gekauft wird von Hand im Demo-Depot.",
+ "vergleich": [],
+ "verlauf": [],
  "tagebuch": [
   {
    "datum": "2026-11-26",
@@ -182,15 +110,13 @@
  ],
  "toepfe": {
   "aktien": {
-   "status": "Probelauf, Demo-Handel ab 01.12.2026",
-   "startgeld_eur": 2000,
-   "positionen_anzahl": 3
+   "status": "Probelauf ohne Orders",
+   "startgeld_eur": 2000
   },
   "krypto": {
-   "status": "Probelauf, Demo-Handel ab 01.12.2026",
-   "startgeld_eur": 1000,
-   "investiert": []
+   "status": "Probelauf ohne Orders",
+   "startgeld_eur": 1000
   }
  },
- "hinweis": "Keine Anlageberatung. Zahlen aus dem Demo-Konto, stündlich aktualisiert. Kauf- und Verkaufsentscheidungen erscheinen erst nach ihrer Ausführung."
+ "hinweis": "Keine Anlageberatung. Demo-Depot mit Spielgeld. Depotwert, Ergebnis, Verlauf und Vergleichsdepots sind vorerst ausgeblendet, bis die Nutzungsbedingungen unserer Datenquellen geklärt sind. Gezeigt werden eigene Bestandsdaten: Stückzahlen, eingezahltes Geld, Käufe und das Logbuch."
 }
