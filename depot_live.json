@@ -1,5 +1,5 @@
 {
- "stand": "2026-11-26T00:00",
+ "stand": "2026-11-26T01:00",
  "art": "Demo-Depot bei Trading 212 mit Spielgeld, kein echtes Geld",
  "eingezahlt_eur": 1000.0,
  "wert_eur": 929.55,
@@ -144,6 +144,11 @@
   }
  ],
  "tagebuch": [
+  {
+   "datum": "2026-11-26",
+   "aktion": "Keine Zukäufe – Krisen-Score 46 (erhöht).",
+   "warum": "Der Bot pausiert lieber, als bei erhöhtem Krisen-Score nachzukaufen. So steht es in seinen Regeln."
+  },
   {
    "datum": "2026-11-25",
    "aktion": "Keine Zukäufe – Krisen-Score 46 (erhöht).",
