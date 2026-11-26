@@ -1,32 +1,27 @@
 {
- "stand": "2026-11-26T21:00",
+ "stand": "2026-11-26T22:00",
  "art": "Demo-Depot mit Spielgeld, kein echtes Geld",
  "werte_ausgeblendet": true,
  "eingezahlt_eur": 1000.0,
  "positionen": [
   {
    "name": "MSCI World",
-   "stueck": 4.587,
    "topf": "Kern"
   },
   {
    "name": "Gold",
-   "stueck": 1.328,
    "topf": "Kern und Satellit"
   },
   {
    "name": "S&P 500",
-   "stueck": 0.126,
    "topf": "Satellit"
   },
   {
    "name": "DAX",
-   "stueck": 0.425,
    "topf": "Satellit"
   },
   {
    "name": "Nasdaq 100",
-   "stueck": 0.022,
    "topf": "Satellit"
   }
  ],
@@ -34,38 +29,32 @@
   {
    "datum": "2026-11-16",
    "markt": "S&P 500",
-   "topf": "Satellit",
-   "stueck": 0.126
+   "topf": "Satellit"
   },
   {
    "datum": "2026-11-16",
    "markt": "Nasdaq 100",
-   "topf": "Satellit",
-   "stueck": 0.022
+   "topf": "Satellit"
   },
   {
    "datum": "2026-11-16",
    "markt": "MSCI World",
-   "topf": "Kern",
-   "stueck": 4.587
+   "topf": "Kern"
   },
   {
    "datum": "2026-11-16",
    "markt": "Gold",
-   "topf": "Satellit",
-   "stueck": 0.277
+   "topf": "Satellit"
   },
   {
    "datum": "2026-11-16",
    "markt": "Gold",
-   "topf": "Kern",
-   "stueck": 1.051
+   "topf": "Kern"
   },
   {
    "datum": "2026-11-16",
    "markt": "DAX",
-   "topf": "Satellit",
-   "stueck": 0.425
+   "topf": "Satellit"
   }
  ],
  "bot_erklaerung": "Jeden Monat 1.000 € Demo-Geld nach festen Regeln: 600 € MSCI World und 150 € Gold als Kern. 250 € gehen zur Hälfte gleichmäßig auf S&P 500, Nasdaq 100, DAX und Gold, zur Hälfte in die 2 stärksten davon. Der Bot rechnet den Kaufplan, gekauft wird von Hand im Demo-Depot.",
@@ -75,7 +64,7 @@
   {
    "datum": "2026-11-26",
    "aktion": "Kein Kauftag. Der Bot kauft einmal im Monat.",
-   "warum": "Kleines Minus nach wenigen Wochen sagt fast nichts. Aktien brauchen Jahre."
+   "warum": ""
   },
   {
    "datum": "2026-11-25",
@@ -101,11 +90,6 @@
    "datum": "2026-11-21",
    "aktion": "Kein Kauftag. Der Bot kauft einmal im Monat.",
    "warum": "Berichtigt am 26.11.: Vorher stand hier „Keine Zukäufe – Krisen-Score 52 (erhöht)“. Das war missverständlich, denn der Bot kauft ohnehin nur einmal im Monat."
-  },
-  {
-   "datum": "2026-11-16",
-   "aktion": "Monatsanlage 1.000 € in 5 ETFs.",
-   "warum": "Fester Termin: einmal im Monat wird nach Plan angelegt."
   }
  ],
  "toepfe": {
@@ -118,5 +102,5 @@
    "startgeld_eur": 1000
   }
  },
- "hinweis": "Keine Anlageberatung. Demo-Depot mit Spielgeld. Depotwert, Ergebnis, Verlauf und Vergleichsdepots sind vorerst ausgeblendet, bis die Nutzungsbedingungen unserer Datenquellen geklärt sind. Gezeigt werden eigene Bestandsdaten: Stückzahlen, eingezahltes Geld, Käufe und das Logbuch."
+ "hinweis": "Keine Anlageberatung. Demo-Depot mit Spielgeld. Depotwert, Stückzahlen, Ergebnis, Verlauf und Vergleichsdepots sind vorerst ausgeblendet, bis die Nutzungsbedingungen unserer Datenquellen geklärt sind. Gezeigt werden eingezahltes Geld, Käufe mit Datum, Markt und Topf sowie das Logbuch."
 }
