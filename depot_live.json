@@ -1,5 +1,5 @@
 {
- "stand": "2026-11-26T20:00",
+ "stand": "2026-11-26T21:00",
  "art": "Demo-Depot bei Trading 212 mit Spielgeld, kein echtes Geld",
  "eingezahlt_eur": 1000.0,
  "wert_eur": 956.33,
@@ -146,33 +146,33 @@
  "tagebuch": [
   {
    "datum": "2026-11-26",
-   "aktion": "Keine Zukäufe – Krisen-Score 48 (erhöht).",
-   "warum": "Der Bot pausiert lieber, als bei erhöhtem Krisen-Score nachzukaufen. So steht es in seinen Regeln."
+   "aktion": "Kein Kauftag. Der Bot kauft einmal im Monat.",
+   "warum": "Kleines Minus nach wenigen Wochen sagt fast nichts. Aktien brauchen Jahre."
   },
   {
    "datum": "2026-11-25",
-   "aktion": "Keine Zukäufe – Krisen-Score 46 (erhöht).",
-   "warum": "Der Bot pausiert lieber, als bei erhöhtem Krisen-Score nachzukaufen. So steht es in seinen Regeln."
+   "aktion": "Kein Kauftag. Der Bot kauft einmal im Monat.",
+   "warum": "Berichtigt am 26.11.: Vorher stand hier „Keine Zukäufe – Krisen-Score 46 (erhöht)“. Das war missverständlich, denn der Bot kauft ohnehin nur einmal im Monat."
   },
   {
    "datum": "2026-11-24",
-   "aktion": "Keine Zukäufe – Krisen-Score 51 (erhöht).",
-   "warum": "Der Bot pausiert lieber, als bei erhöhtem Krisen-Score nachzukaufen. So steht es in seinen Regeln."
+   "aktion": "Kein Kauftag. Der Bot kauft einmal im Monat.",
+   "warum": "Berichtigt am 26.11.: Vorher stand hier „Keine Zukäufe – Krisen-Score 51 (erhöht)“. Das war missverständlich, denn der Bot kauft ohnehin nur einmal im Monat."
   },
   {
    "datum": "2026-11-23",
-   "aktion": "Keine Zukäufe – Krisen-Score 50 (erhöht).",
-   "warum": "Der Bot pausiert lieber, als bei erhöhtem Krisen-Score nachzukaufen. So steht es in seinen Regeln."
+   "aktion": "Kein Kauftag. Der Bot kauft einmal im Monat.",
+   "warum": "Berichtigt am 26.11.: Vorher stand hier „Keine Zukäufe – Krisen-Score 50 (erhöht)“. Das war missverständlich, denn der Bot kauft ohnehin nur einmal im Monat."
   },
   {
    "datum": "2026-11-22",
-   "aktion": "Keine Zukäufe – Krisen-Score 52 (erhöht).",
-   "warum": "Der Bot pausiert lieber, als bei erhöhtem Krisen-Score nachzukaufen. So steht es in seinen Regeln."
+   "aktion": "Kein Kauftag. Der Bot kauft einmal im Monat.",
+   "warum": "Berichtigt am 26.11.: Vorher stand hier „Keine Zukäufe – Krisen-Score 52 (erhöht)“. Das war missverständlich, denn der Bot kauft ohnehin nur einmal im Monat."
   },
   {
    "datum": "2026-11-21",
-   "aktion": "Keine Zukäufe – Krisen-Score 52 (erhöht).",
-   "warum": "Der Bot pausiert lieber, als bei erhöhtem Krisen-Score nachzukaufen. So steht es in seinen Regeln."
+   "aktion": "Kein Kauftag. Der Bot kauft einmal im Monat.",
+   "warum": "Berichtigt am 26.11.: Vorher stand hier „Keine Zukäufe – Krisen-Score 52 (erhöht)“. Das war missverständlich, denn der Bot kauft ohnehin nur einmal im Monat."
   },
   {
    "datum": "2026-11-16",
