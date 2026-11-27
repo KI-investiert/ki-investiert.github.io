@@ -3,9 +3,8 @@
 
 ## Wichtigste Seiten
 - [KI-Trading-Bot mit ETFs: Demo-Depot live | KI investiert](https://www.ki-investiert.de/): KI-Trading-Bot im Demo-Depot: Ein Regel-Bot legt monatlich 1.000 € Spielgeld in ETFs an. Jede Entscheidung steht im Logbuch. Keine Anlageberatung.
-- [Video-Briefing für Vermögensverwalter – KI investiert](https://www.ki-investiert.de/b2b/): Wöchentliches Kapitalmarkt-Briefing als Video im Design Ihres Hauses: KI-moderiert, geprüfte Zahlen, 690 € im Monat. Januar kostenlos testen.
-- [Live-Depot des KI-Bots – KI investiert](https://www.ki-investiert.de/depot/): Das Demo-Depot des KI-Bots live: Depotwert, Aufteilung, Vergleich mit MSCI World und Logbuch, stündlich aktualisiert.
-- [KI-Trading-Bot-Experiment: Regeln & Tagesstand im Demo-Depot](https://www.ki-investiert.de/experiment/): Öffentliches Experiment: Ein Regel-Bot legt Spielgeld in ETFs an. Tagesstand mit Datum, alle Regeln und Vergleich mit MSCI World. Keine Anlageberatung.
+- [Live-Depot des KI-Bots – KI investiert](https://www.ki-investiert.de/depot/): Das Demo-Depot des KI-Bots: Käufe und Logbuch. Demo-Konto mit Spielgeld.
+- [KI-Trading-Bot-Experiment: Regeln & Tagesstand im Demo-Depot](https://www.ki-investiert.de/experiment/): Öffentliches Experiment: Ein Regel-Bot legt Spielgeld in ETFs an. Tagesstand mit Datum, alle Regeln und Logbuch. Keine Anlageberatung.
 - [Häufige Fragen zu KI investiert: Bot, Demo-Depot, Kosten](https://www.ki-investiert.de/faq/): Antworten auf die häufigsten Fragen zu KI investiert: Wie arbeitet der Bot, ist das echtes Geld, was kostet es, wer steht dahinter? In einfacher Sprache.
 - [Börse für Anfänger: E-Book kostenlos als PDF | KI investiert](https://www.ki-investiert.de/geschenk/): Kostenloses E-Book „Börse verstehen in 30 Minuten“: ETF, Sparplan, Kosten, Risiko, Krypto und Bot-Regeln. Ohne Anmeldung, bis 31.12.2026.
 - [Ergänzende Hinweise - KI investiert](https://www.ki-investiert.de/hinweise/): Ergänzende Hinweise von KI investiert: Nutzung der YouTube API Services beim Hochladen und Versand des Wochenbriefs über Substack.
@@ -18,7 +17,7 @@
 - [Was ist ein Backtest? Einfach erklärt | KI investiert](https://www.ki-investiert.de/lexikon/backtest/): Ein Backtest rechnet nach, wie eine Regel in der Vergangenheit gelaufen wäre. Was er zeigt, wo er täuscht und wie wir Rückrechnungen kennzeichnen.
 - [Bärenmarkt und Bullenmarkt einfach erklärt](https://www.ki-investiert.de/lexikon/baerenmarkt-bullenmarkt/): Bärenmarkt heißt länger fallende Kurse, Bullenmarkt länger steigende. Woher die Begriffe kommen, die Faustregel mit 20 % und ihre Grenzen.
 - [Börsencrash oder Korrektur? Einfach erklärt](https://www.ki-investiert.de/lexikon/boersencrash-korrektur/): Eine Korrektur ist ein Rückgang von rund 10 %, ein Crash ein sehr schneller, starker Kurssturz. Unterschied, Faustregeln und was unser Demo-Bot dann tut.
-- [Was ist ein Broker? Einfach erklärt | KI investiert](https://www.ki-investiert.de/lexikon/broker/): Ein Broker führt Käufe und Verkäufe von Wertpapieren an der Börse aus. Aufgabe, Kosten und bei welchem Broker unser Demo-Bot handelt.
+- [Was ist ein Broker? Einfach erklärt | KI investiert](https://www.ki-investiert.de/lexikon/broker/): Ein Broker führt Käufe und Verkäufe von Wertpapieren an der Börse aus. Aufgabe, Kosten und bei welchem Broker unser Demo-Depot liegt.
 - [Was ist der DAX? Einfach erklärt | KI investiert](https://www.ki-investiert.de/lexikon/dax/): Der DAX ist der Aktienindex der 40 größten börsennotierten Firmen in Deutschland. Aufbau, Grenzen und seine Rolle in unserem Demo-Depot.
 - [Was ist ein Demo-Konto? Einfach erklärt | KI investiert](https://www.ki-investiert.de/lexikon/demo-konto/): Ein Demo-Konto ist ein Übungskonto beim Broker mit Spielgeld. Was es zeigt, was nicht, und warum unser Bot öffentlich in einem Demo-Konto handelt.
 - [Was ist ein Depot? Einfach erklärt | KI investiert](https://www.ki-investiert.de/lexikon/depot/): Ein Depot ist ein Konto für Wertpapiere wie Aktien und ETFs. Wie es funktioniert, was es kostet und wie unser Demo-Depot aufgeteilt ist.
