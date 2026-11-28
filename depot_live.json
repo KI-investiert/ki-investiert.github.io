@@ -1,5 +1,5 @@
 {
- "stand": "2026-11-28T00:00",
+ "stand": "2026-11-28T01:00",
  "art": "Demo-Depot mit Spielgeld, kein echtes Geld",
  "werte_ausgeblendet": true,
  "eingezahlt_eur": 1000.0,
@@ -61,6 +61,11 @@
  "vergleich": [],
  "verlauf": [],
  "tagebuch": [
+  {
+   "datum": "2026-11-28",
+   "aktion": "Kein Kauftag. Der Bot kauft einmal im Monat.",
+   "warum": "Feste Regeln schützen vor Bauchentscheidungen bei lauten Nachrichten."
+  },
   {
    "datum": "2026-11-27",
    "aktion": "Kein Kauftag. Der Bot kauft einmal im Monat.",
