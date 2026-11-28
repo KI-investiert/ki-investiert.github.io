@@ -7,67 +7,13 @@
   <podcast:guid>4908b66c-3d97-5098-9b22-2f6ca8b16606</podcast:guid>
   <itunes:new-feed-url>https://www.ki-investiert.de/podcast/feed.xml</itunes:new-feed-url>
   <language>de</language>
-  <description>Jeden Börsentag die wichtigsten Markt-Nachrichten in wenigen Minuten, erklärt von Ada und Konrad – zwei KI-Figuren. Dazu, was unser regelbasierter Demo-Bot macht. Alle Zahlen kommen aus Marktdaten und werden automatisch geprüft. KI-generiert, keine Anlageberatung. Alle Kanäle: https://www.ki-investiert.de · Impressum: https://itrk.legal/l/80s2-0-5z6g-08i2u-de.html</description>
+  <description>Börsen-Nachrichten für Pendler in wenigen Minuten: jeden Börsentag DAX, Wall Street und ETFs, erklärt von den KI-Figuren Ada und Konrad. Dazu, was unser regelbasierter Demo-Bot macht. Alle Zahlen kommen aus Marktdaten und werden automatisch geprüft. Kostenloser Wochenbrief: https://kiinvestiert.substack.com/subscribe · Alle Kanäle: https://www.ki-investiert.de · Impressum: https://itrk.legal/l/80s2-0-5z6g-08i2u-de.html · KI-generiert, keine Anlageberatung.</description>
   <itunes:author>KI investiert</itunes:author>
   <itunes:owner><itunes:name>KI investiert</itunes:name><itunes:email>ki.investiert@gmail.com</itunes:email></itunes:owner>
   <itunes:image href="https://www.ki-investiert.de/podcast/cover.jpg"/>
   <itunes:category text="Business"><itunes:category text="Investing"/></itunes:category>
   <itunes:explicit>false</itunes:explicit>
   <itunes:type>episodic</itunes:type>
-  <item>
-   <title>Börse heute 24.11.: DAX, Nvidia-Chef Huang und Hormus-Minen</title>
-   <description>Börse heute am 24.11.: DAX, Nvidia-Chef Huang und Hormus-Minen. Themen: Nvidia-Chef Huang kehrt zurück, Fed-Zinserwartungen treiben Renditen, Minen in der Straße von Hormus. Dazu im Pendler-Teil: was der Demo-Bot heute macht, die Termine des Tages erklärt und der Begriff des Tages. Die wichtigsten Börsen-Nachrichten für Pendler – DAX, Wall Street, ETFs und unser KI-Demo-Bot. Ada und Konrad sind KI-Figuren. KI-generiert, keine Anlageberatung.</description>
-   <enclosure url="https://www.ki-investiert.de/podcast/folgen/2026-11-24_morning.mp3" length="12634113" type="audio/mpeg"/>
-   <guid isPermaLink="false">ki-investiert-2026-11-24-morning</guid>
-   <pubDate>Tue, 24 Nov 2026 09:45:00 +0100</pubDate>
-   <itunes:duration>526</itunes:duration>
-   <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
-   <title>Börse heute 23.11.: DAX, Nasdaq und Flash-PMI</title>
-   <description>Börse heute am 23.11.: DAX, Nasdaq und Flash-PMI. Themen: Tech-Werte weltweit unter Druck. Dazu im Pendler-Teil: was der Demo-Bot heute macht, die Termine des Tages erklärt und der Begriff des Tages. Die wichtigsten Börsen-Nachrichten für Pendler – DAX, Wall Street, ETFs und unser KI-Demo-Bot. Ada und Konrad sind KI-Figuren. KI-generiert, keine Anlageberatung.</description>
-   <enclosure url="https://www.ki-investiert.de/podcast/folgen/2026-11-23_morning.mp3" length="12513114" type="audio/mpeg"/>
-   <guid isPermaLink="false">ki-investiert-2026-11-23-morning</guid>
-   <pubDate>Mon, 23 Nov 2026 09:45:00 +0100</pubDate>
-   <itunes:duration>521</itunes:duration>
-   <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
-   <title>DAX, KI-Ausverkauf und Taiwan-Börse (22.11.)</title>
-   <description>Börse heute am 22.11.: DAX, KI-Ausverkauf und Taiwan-Börse. Themen: KI-Boom schlägt in Korrektur um, Zwangsverkäufe an Taiwans Börse. Die wichtigsten Börsen-Nachrichten für Pendler – DAX, Wall Street, ETFs und unser KI-Demo-Bot. Ada und Konrad sind KI-Figuren. KI-generiert, keine Anlageberatung.</description>
-   <enclosure url="https://www.ki-investiert.de/podcast/folgen/2026-11-22_sonntag.mp3" length="6335259" type="audio/mpeg"/>
-   <guid isPermaLink="false">ki-investiert-2026-11-22-sonntag</guid>
-   <pubDate>Sun, 22 Nov 2026 18:00:00 +0100</pubDate>
-   <itunes:duration>264</itunes:duration>
-   <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
-   <title>Wochenrückblick: Tech-Ausverkauf, Anthropic-Debüt und Streuung (21.11.)</title>
-   <description>Ein breiter Ausverkauf bei Technologie- und KI-Werten, der Rekord-Börsengang von Anthropic und die Frage, was Streuung Sparern wirklich bringt. Dazu der Blick auf den Demo-Bot und auf eine ruhige Terminlage. Ada und Konrad sind KI-Figuren. KI-generiert, keine Anlageberatung.</description>
-   <enclosure url="https://www.ki-investiert.de/podcast/folgen/2026-11-21_woche.mp3" length="33297388" type="audio/mpeg"/>
-   <guid isPermaLink="false">ki-investiert-2026-11-21-woche</guid>
-   <pubDate>Sat, 21 Nov 2026 18:00:00 +0100</pubDate>
-   <itunes:duration>1387</itunes:duration>
-   <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
-   <title>Börse heute 20.11.: DAX, Anthropic-Börsengang und Walmart-Zahlen</title>
-   <description>Börse heute am 20.11.: DAX, Anthropic-Börsengang und Walmart-Zahlen. Themen: Anthropic-Börsengang und Verkaufsdruck, Verluste in Ostasien, Walmart-Zahlen und Ausblick. Die wichtigsten Börsen-Nachrichten für Pendler – DAX, Wall Street, ETFs und unser KI-Demo-Bot. Ada und Konrad sind KI-Figuren. KI-generiert, keine Anlageberatung.</description>
-   <enclosure url="https://www.ki-investiert.de/podcast/folgen/2026-11-20_morning.mp3" length="2555863" type="audio/mpeg"/>
-   <guid isPermaLink="false">ki-investiert-2026-11-20-morning</guid>
-   <pubDate>Fri, 20 Nov 2026 09:45:00 +0100</pubDate>
-   <itunes:duration>160</itunes:duration>
-   <itunes:explicit>false</itunes:explicit>
-  </item>
-  <item>
-   <title>Morning Show: Märkte, Fed und Termine heute (19.11.)</title>
-   <description>Themen: Tech-Zahlen, Börsengang und Fed. Ada und Konrad sind KI-Figuren. KI-generiert, keine Anlageberatung.</description>
-   <enclosure url="https://www.ki-investiert.de/podcast/folgen/2026-11-19_morning.mp3" length="2716777" type="audio/mpeg"/>
-   <guid isPermaLink="false">ki-investiert-2026-11-19-morning</guid>
-   <pubDate>Thu, 19 Nov 2026 09:45:00 +0100</pubDate>
-   <itunes:duration>170</itunes:duration>
-   <itunes:explicit>false</itunes:explicit>
-  </item>
   <item>
    <title>Anthropic-Aktie: erster Börsentag – Schluss 97,17 $ (19.11.)</title>
    <description>Anthropic (ANT) am ersten Börsentag: Ausgabepreis 83 $, erster Kurs 111,50 $, Hoch 115,10 $, Tief 92,72 $, Schluss 97,17 $. Ada und Konrad sind KI-Figuren. KI-generiert, keine Anlageberatung.</description>
